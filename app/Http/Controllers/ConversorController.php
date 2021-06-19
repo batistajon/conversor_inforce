@@ -4,8 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Conversor;
 use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Date;
 use Illuminate\Support\Facades\Http;
 
 class ConversorController extends Controller
@@ -46,7 +44,8 @@ class ConversorController extends Controller
         } catch (\Exception $e) {
 
             return response()->json([
-                    'erro' => 'Insira um valor para realizar a cotação'
+                    'erro' => 'Algo deu errado. Insira valores válidos para realizar a cotação. Os códigos possíveis são BRL, USD e EUR.',
+                    'tipo' => $e->getMessage()
                 ], 400);
         } 
     }

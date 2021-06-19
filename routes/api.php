@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+Route::prefix('v1')->group(function () {
 
-Route::get('converter/{base}-{to}/{value?}', [ConversorController::class, 'converter']);
-
+    Route::get('converter/{base}-{to}/{value?}', [ConversorController::class, 'converter']); 
+});
