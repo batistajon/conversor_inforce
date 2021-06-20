@@ -1,7 +1,7 @@
 const axios = window.axios;
 const converterBtn = document.getElementById('converter');
 
-converterBtn.addEventListener('click', function (event) {
+converterBtn.addEventListener('click', (event) => {
     event.preventDefault();
 
     let moedaBase = document.getElementById('moedaBase').value;
@@ -9,11 +9,11 @@ converterBtn.addEventListener('click', function (event) {
     let valorParaConverter = document.getElementById('valorParaConverter').value;
 
     if(moedaBase == '') {
-        moedaBase = 'US'
+        moedaBase = 'null';
     }
 
     if(moedaParaConverter == '') {
-        moedaParaConverter = 'BR'
+        moedaParaConverter = 'null';
     }
 
     const buscaConversao = async (moedaBase, moedaParaConverter, valorParaConverter) => {
@@ -25,21 +25,27 @@ converterBtn.addEventListener('click', function (event) {
             resposta.innerText = '';
         }
 
-        let response = await axios.get(`http://127.0.0.1:8000/api/v1/converter/${moedaBase}-${moedaParaConverter}/${valorParaConverter}`);         
+        let response = await axios.get(`
+                            http://127.0.0.1:8000/api/v1/converter/${moedaBase}-${moedaParaConverter}/${valorParaConverter}
+                        `);         
         
         if(response.data?.cotacao) {
-            resposta.className = 'alert alert-success mt-5';
+            resposta.className = 'lead alert alert-success mt-5';
             loading = false;
-            return resposta.innerHTML = `
-                                        A cotação de ${moedaBase} para ${moedaParaConverter} hoje é: ${response.data?.cotacao}. \n
-                                        O valor total da cotação é: $${response.data?.resultado}.
-                                    `;
+            return resposta
+                    .innerHTML = `
+                            A cotação de ${moedaBase} para ${moedaParaConverter} hoje é: ${response.data?.cotacao}. \n
+                            O valor total da cotação é: $${response.data?.resultado}.
+                        `;
         }
 
         if(response.data?.erro) {
-            resposta.className = 'alert alert-danger mt-5';
+            resposta.className = 'lead alert alert-danger mt-5';
             loading = false;
-            return resposta.innerHTML = `${response.data?.erro} ${response.data?.tipo}`;
+            return resposta
+                    .innerHTML = `
+                            ${response.data?.erro} ${response.data?.tipo}
+                        `;
         }
     }
 

@@ -1,7 +1,10 @@
-#main {
+html, body, #main {
     background: url(https://inforce.com.br/wp-content/uploads/2019/04/slide_home.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .float-md-start {
@@ -12,8 +15,8 @@
     float: right;
 }
 
-.logo {
-    margin-bottom: 150px;
+#header {
+    margin-bottom: 100px;
 }
 
 .conteudo {
