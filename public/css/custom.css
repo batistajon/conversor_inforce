@@ -1,0 +1,21 @@
+#main {
+    background: url(https://inforce.com.br/wp-content/uploads/2019/04/slide_home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.float-md-start {
+    float: left;
+}
+
+.float-md-end {
+    float: right;
+}
+
+.logo {
+    margin-bottom: 150px;
+}
+
+.conteudo {
+    margin-bottom: auto !important;
+}

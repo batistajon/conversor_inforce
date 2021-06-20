@@ -46,7 +46,7 @@ class ConversorController extends Controller
             return response()->json([
                     'erro' => 'Algo deu errado. Insira valores válidos para realizar a cotação. Os códigos possíveis são BRL, USD e EUR.',
                     'tipo' => $e->getMessage()
-                ], 400);
+                ], 200);
         } 
     }
 }
