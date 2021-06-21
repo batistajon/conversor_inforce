@@ -29,9 +29,8 @@ Como pré-requisito para o funcionamento do teste, é preciso ter instalado o no
     
 * Primeiro usar o comando abaixo no terminal para realizar o clone do repositório:
 
-    ```
     git clone https://github.com/batistajon/conversor_inforce.git
-    ```
+    
 
 * Mudar para o diretório do projeto:
 
@@ -79,34 +78,38 @@ Se os dados enviados estiverem corretos, espera-se a resposta da cotação do di
 O back-end foi desenvolvido com o framework Laravel na versão 8.
 
 O endpoint fornecido ao front-end é:
-
-    ```
+    
     http://127.0.0.1:8000/api/v1/converter/<MOEDA_BASE>-<MOEDA_A_CONVERTER>/<VALOR_A_CONVERTER>
-    ```
+    
 
 O resultado da requisição acima é um `json`:
-
-    ```
-        {
-            "cotacao":<cotacao>, 
-            "resultado":<resultado>
-        }
-    ```
+    
+    {
+        "cotacao":<cotacao>, 
+        "resultado":<resultado>
+    }
+    
 
 Exemplo de cotação no dia 21/06/2021 do montante de $15.00 Dólares para Real:
 
-    ```
     http://127.0.0.1:8000/api/v1/converter/USD-BRL/15
-    ```
+    
 
 O retorno dessa chamada será:
 
-    ```
-        {
-            "cotacao":5.041095, 
-            "resultado":75.62
-        }
-    ```
+    {
+        "cotacao":5.041095, 
+        "resultado":75.62
+    }
+    
+
+## Front-end
+
+Foi utilizada a biblioteca `laravel/ui` com a instalação do scaffolding `bootstrap` para estilização da página.
+
+Para realizar as chamadas à API do back-end foi utilizado componente HTTP client `axios` do gerenciador de pacotes javascript `npm`.
+
+
 
 ### Laravel License
 
