@@ -29,9 +29,9 @@ Como pré-requisito para o funcionamento do teste, é preciso ter instalado o no
 
 
     * Primeiro usar o comando abaixo no terminal para realizar o clone do repositório:
-<!--ts-->
-git clone https://github.com/batistajon/conversor_inforce.git
-<!--te-->
+
+```git clone https://github.com/batistajon/conversor_inforce.git```
+
     * Mudar para o diretório do projeto:
        * `cd conversor_inforce`
     * Atualizar o `composer.json` para a instalação de todas as dependencias:
