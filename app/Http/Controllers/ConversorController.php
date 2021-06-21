@@ -43,9 +43,12 @@ class ConversorController extends Controller
 
         } catch (\Exception $e) {
 
+            $erro = $e->getMessage();
+            $erro = explode(': ', $erro)[1];
+
             return response()->json([
                     'erro' => 'Algo deu errado. Insira valores válidos para realizar a cotação. Os códigos possíveis são BRL, USD e EUR.',
-                    'tipo' => $e->getMessage()
+                    'tipo' => "As moedas digitadas foram: $erro"
                 ]);
         } 
     }

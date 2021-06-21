@@ -2,6 +2,7 @@ const axios = window.axios;
 const converterBtn = document.getElementById('converter');
 
 converterBtn.addEventListener('click', (event) => {
+    
     event.preventDefault();
 
     let moedaBase = document.getElementById('moedaBase').value;

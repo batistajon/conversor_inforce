@@ -12,11 +12,11 @@
         <div class="row">
             <div class="col-8">
                 <div class="card m-5 bg-dark">
+                    <div id="header" class="card-header">
+                        <img src="https://inforce.com.br/wp-content/uploads/2017/03/logo.png" alt="">
+                    </div>
                     <div class="card-body">
                         <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-                            <div id="header" class="card-title">
-                                <img src="https://inforce.com.br/wp-content/uploads/2017/03/logo.png" alt="">
-                            </div>
                             <div class="px-3 conteudo flex-column justify-content-center">
                                 <h1 class="mb-3">Faça a sua cotação.</h1>
                                 <p class="lead mb-3">Selecione a moeda que você deseja cotar. Insira os códigos das moedas sempre com 3 caracteres em letras maiúsculas. As moedas possíveis para cotação, com seus respectivos códigos são: </p>
