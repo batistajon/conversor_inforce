@@ -24,11 +24,10 @@ moedas que trabalharemos são Euro (EUR), Real (BRL) e Dólar (USD). Como payloa
 moeda base, a moeda para qual será a feita a conversão e o valor a ser convertido.
 
 ### Instalação
-
 Como pré-requisito para o funcionamento do teste, é preciso ter instalado o no mínimo o [PHP 7.3](https://www.php.net/downloads.php#v7.3.28) e o [Composer](https://getcomposer.org/).
-    * Primeiro usar o comando abaixo no terminal para realizar o clone do repositório:
+    * Primeiro usar o comando abaixo no terminal para realizar o clone do repositório.
        * ```git clone https://github.com/batistajon/conversor_inforce.git```
-    * Mudar para o diretório do projeto:
+    * Mudar para o diretório do projeto.
        * `cd conversor_inforce`
     * Atualizar o `composer.json` para a instalação de todas as dependencias:
        * `composer update`
