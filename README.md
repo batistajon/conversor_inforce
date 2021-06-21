@@ -27,9 +27,11 @@ moeda base, a moeda para qual será a feita a conversão e o valor a ser convert
 
 Como pré-requisito para o funcionamento do teste, é preciso ter instalado o no mínimo o [PHP 7.3](https://www.php.net/downloads.php#v7.3.28) e o [Composer](https://getcomposer.org/).
 
-<!--ts-->
+
     * Primeiro usar o comando abaixo no terminal para realizar o clone do repositório:
-       * `git clone https://github.com/batistajon/conversor_inforce.git`
+<!--ts-->
+git clone https://github.com/batistajon/conversor_inforce.git
+<!--te-->
     * Mudar para o diretório do projeto:
        * `cd conversor_inforce`
     * Atualizar o `composer.json` para a instalação de todas as dependencias:
@@ -41,7 +43,7 @@ Como pré-requisito para o funcionamento do teste, é preciso ter instalado o no
     * Inserir no arquivo `.env` a constante `API_KEY_COTACAO=b2cc1f507553ac750bad` para consulta a API de cotação atualizada externa.
     * Iniciar o servidor de desenvolvimento, e acessar a url indicada no terminal:
        * `php artisan serve`  
-<!--te-->
+
 
 ### Como usar
 
