@@ -19,7 +19,7 @@
                         <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
                             <div class="px-3 conteudo flex-column justify-content-center">
                                 <h1 class="mb-3">Faça a sua cotação.</h1>
-                                <p class="lead mb-3">Selecione a moeda que você deseja cotar. Insira os códigos das moedas sempre com 3 caracteres em letras maiúsculas. As moedas possíveis para cotação, com seus respectivos códigos são: </p>
+                                <p class="lead mb-3">Digite a moeda que você deseja para obter a cotação atualizada. Insira os códigos das moedas sempre com 3 caracteres em letras maiúsculas. As moedas possíveis para cotação, com seus respectivos códigos são: </p>
                                 <p class="lead"> Real - BRL | Dólar - USD | Euro - EUR.</p>
                                 <p>Obs.: Caso não insira nenhum valor para cotação, será considerado o valor de $1.00</p>
                                 <form action="" method="get">
