@@ -25,12 +25,13 @@ moeda base, a moeda para qual será a feita a conversão e o valor a ser convert
 
 ### Instalação
 
-Como pré-requisito para o funcionamento do teste, é preciso ter instalado o no mínimo o [PHP 7.3](https://www.php.net/downloads.php#v7.3.28) e o [Composer](https://getcomposer.org/).
+Como pré-requisito para o funcionamento do teste, é preciso ter instalados o [PHP 7.3](https://www.php.net/downloads.php#v7.3.28), ou superior, e o [Composer](https://getcomposer.org/).
     
 * Primeiro usar o comando abaixo no terminal para realizar o clone do repositório:
 
+    ```
     git clone https://github.com/batistajon/conversor_inforce.git
-    
+    ```
 
 * Mudar para o diretório do projeto:
 
@@ -109,8 +110,16 @@ Foi utilizada a biblioteca `laravel/ui` com a instalação do scaffolding `boots
 
 Para realizar as chamadas à API do back-end foi utilizado componente HTTP client `axios` do gerenciador de pacotes javascript `npm`.
 
-
-
 ### Laravel License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+### Autor
+
+<img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/64670588?v=4" width="100px;" alt=""/>
+
+Feito por Jonathas Batista.
+
+[![Twitter Badge](https://img.shields.io/badge/-@BatistaJon-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/BatistaJon)](https://twitter.com/BatistaJon) 
+[![Linkedin Badge](https://img.shields.io/badge/-Jonathas%20Batista-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/jonbatista/)](https://www.linkedin.com/in/jonbatista/) 
+[![Gmail Badge](https://img.shields.io/badge/-batista.jonathas@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:batista.jonathas@gmail.com)](mailto:batista.jonathas@gmail.com)
