@@ -27,18 +27,18 @@ moeda base, a moeda para qual será a feita a conversão e o valor a ser convert
 
 Como pré-requisito para o funcionamento do teste, é preciso ter instalado o no mínimo o [PHP 7.3](https://www.php.net/downloads.php#v7.3.28) e o [Composer](https://getcomposer.org/).
     * Primeiro usar o comando abaixo no terminal para realizar o clone do repositório:
-        `git clone https://github.com/batistajon/conversor_inforce.git`
+       * `git clone https://github.com/batistajon/conversor_inforce.git`
     * Mudar para o diretório do projeto:
-        `cd conversor_inforce`
+       * `cd conversor_inforce`
     * Atualizar o `composer.json` para a instalação de todas as dependencias:
-        `composer update`
+       * `composer update`
     * Copiar o arquivo `.env.example` para um arquivo `.env` para configurar o ambiente:
-        `cp .env.example .env`
+       * `cp .env.example .env`
     * Gerar uma nova `key` para o projeto local:
-        `php artisan key:generate`
+       * `php artisan key:generate`
     * Inserir no arquivo `.env` a constante `API_KEY_COTACAO=b2cc1f507553ac750bad` para consulta a API de cotação atualizada externa.
     * Iniciar o servidor de desenvolvimento, e acessar a url indicada no terminal:
-        `php artisan serve`  
+       * `php artisan serve`  
 
 ### Como usar
 
@@ -53,7 +53,7 @@ Se os dados enviados estiverem corretos, espera-se a resposta da cotação do di
 O back-end foi desenvolvido com o framework Laravel na versão 8.
 
 O endpoint fornecido ao front-end é:
-    `http://127.0.0.1:8000/api/v1/converter/<MOEDA_BASE>-<MOEDA_A_CONVERTER>/<VALOR_A_CONVERTER>`
+    * `http://127.0.0.1:8000/api/v1/converter/<MOEDA_BASE>-<MOEDA_A_CONVERTER>/<VALOR_A_CONVERTER>`
 
 O resultado da requisição acima é um `json`:
 ```
